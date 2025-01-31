@@ -1,0 +1,111 @@
+ 
+
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #d6f4ff;   
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+ 
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    color: #5e0363;  /* Tomato Red */
+    font-weight: 700;
+    margin-bottom: 40px;
+    /* text-transform: capitalize; */
+    letter-spacing: 1px;
+}
+
+.user-card {
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(13, 103, 172, 0.1);  /* Stronger shadow for depth */
+    margin-bottom: 30px;
+    width: 1000px;
+    text-align: center;
+    border: 3px solid #0d34c0;  /* Orange-red border */
+    background-color: #fdf6fd;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.user-card:hover {
+    transform: translateY(-8px);  /* Lift effect */
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15); /* More intense shadow on hover */
+}
+
+.user-card h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 10px 0;
+}
+
+.user-card .input {
+    /* width: 90%; */
+    padding: 12px;
+    margin: 10px 10px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #333;
+    transition: border-color 0.3s ease;
+}
+
+.user-card .input:focus {
+    border-color: #0f2596;  /* Highlight border with Tomato Red on focus */
+    outline: none;
+}
+
+.user-card .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.user-card button {
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.user-card  #one {
+    background-color: #cbf6cb;  /* Lime Green */
+    color: rgb(7, 113, 142);
+}
+
+.user-card #two {
+    background-color: #e1f8fa;  /* Orange Red */
+    color: white;
+}
+
+.user-card .buttons:hover {
+    transform: translateY(-4px); /* Hover effect */
+}
+
+.user-card  #one:hover {
+    background-color: #fad3e8; /* Darker green */
+}
+
+.user-card  #two:hover {
+    background-color:   #fad3e8; /* Darker red */
+}
+#two{
+    margin-bottom:100px
+}
+
+@media (max-width: 400px) {
+    .user-card {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+}
